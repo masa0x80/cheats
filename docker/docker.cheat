@@ -1,0 +1,19 @@
+% docker
+
+# Remove unused data
+docker system prune -a --volumes
+
+# 起動していないContainerを削除
+docker ps -aqf status=exited | xargs docker rm -v
+
+# タグのついていないImage削除
+docker images -qf dangling=true | xargs docker rmi
+
+# どのContainerにも紐づいていないVolumeを削除
+docker volume ls -qf dangling=true | xargs docker volume rm
+
+# swagger-editor
+docker run -p 80:8080 -v (pwd):/tmp -e SWAGGER_FILE=<oas_file_path> swaggerapi/swagger-editor
+
+# swagger-ui
+docker run -p 80:8080 -v (pwd):/tmp -e SWAGGER_JSON=<oas_file_path> swaggerapi/swagger-ui

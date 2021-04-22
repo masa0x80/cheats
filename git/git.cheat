@@ -1,0 +1,114 @@
+% git
+
+# Initial commit
+git commit --allow-empty -m 'Initial commit'
+
+# Add file
+git add
+# Add all files
+git add --all
+
+# Create commit for staged files
+git commit -v
+# Amend
+git commit -v --amend
+# Fixup
+git commit --fixup (git fzf)
+
+# Git push
+git push origin (git_current_branch)
+# Git push [FORCE]
+git push --force-with-lease origin (git_current_branch)
+
+# Show branches
+git branch
+# Show all branches
+git branch -a
+# Show remote branches
+git branch --remote
+
+# Change/Checkout branch
+git switch <BRANCH_NAME>
+
+# Cherry pick
+git cherry-pick <COMMIT_HASH>
+
+# Show diff [chached]
+git diff --cached
+# Show diff [staged]
+git diff --staged
+
+# Merge
+git merge --no-ff
+
+# log
+git log --stat --color
+# log with diff
+git log --stat --color -p
+# log (Graph)
+git log --oneline --decorate --color --graph
+
+# rebase
+git rebase <BRANCH_NAME>
+# rebase [abort]
+git rebase --abort
+# rebase [continue]
+git rebase --continue
+# rebase [skip]
+git rebase --skip
+# rebase [interactive]
+git rebase -i (git fzf)
+
+# Show
+git show
+# Status
+git status -sb
+
+# Create branch
+git switch -c <NEW_BRANCH_NAME>
+
+# review
+git review GH
+
+# git stash
+git stash
+# git stash [pop]
+git stash pop
+
+# Adds a remote for a git repository
+git remote add <remote_name> <remote_url>
+
+# Renames a remote for a git repository
+git remote rename <old_remote_name> <new_remote_name>
+
+# Remove a remote for a git repository
+git remote remove <remote_name>
+
+# Shallow clone with depth 1 with all branches and submodules
+git clone --depth=1 --no-single-branch --recurse-submodules <repository> <clone_directory>
+
+# Add a new module
+git submodule add <repository> <path>
+
+# Update module
+git submodule update --init
+
+# Update module without init
+git submodule update
+
+# Pull all submodules
+git submodule foreach git pull origin master
+
+# Update all submodules
+git submodule update --init --recursive
+
+# Remove commits from local repository (destroy changes)
+git reset --hard HEAD~<number_of_commits>
+
+# Remove commits from local repository (keep changes)
+git reset --soft HEAD~<number_of_commits>
+
+# reset
+git reset --
+
+$ BRANCH_NAME: git branch --format='%(refname:short)' --sort=-committerdate

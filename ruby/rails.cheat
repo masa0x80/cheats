@@ -1,0 +1,28 @@
+% rails
+
+# Create new project
+rails new <project_name> --database=mysql --skip-bundle --skip-test --skip-turbolinks --skip-action-mailer --skip-action-mailbox --skip-action-text --skip-active-storage
+
+# Create new project
+rails new . --database=mysql --skip-bundle --skip-test --skip-turbolinks --skip-action-mailer --skip-action-mailbox --skip-action-text --skip-active-storage
+
+# Create new project (ディレクトリー内で実行)
+rails new . --database=mysql --skip-bundle --skip-test --skip-turbolinks --skip-action-mailer --skip-action-mailbox --skip-action-text --skip-active-storage
+
+# Create a scaffold
+rails g scaffold <model> name:string:index email:string:unique
+
+# Create a controller
+rails g controller <models> --helper=false --assets=false
+
+# Create a model
+rails g model <model>
+
+# Create migration
+rails g migration <AddColumnNameToTableName> <new_column>:<type>
+
+# Set Environment
+rails db:environment:set RAILS_ENV=<env>
+
+$ type: echo -e 'string\ninteger\nboolean\ntext\ndatetime'
+$ env: echo -e 'development\ntest\nproduction'

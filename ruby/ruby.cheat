@@ -1,0 +1,12 @@
+% ruby
+
+# bundle install
+bundle config set path 'vendor/bundle'; bundle binstubs --path=vendor/bin; bundle install --jobs=4
+# bundle install [local]
+bundle config set path 'vendor/bundle'; bundle binstubs --path=vendor/bin; bundle install --jobs=4 --local
+
+# solargraph
+solargraph download-core; solargraph bundle; solargraph config
+
+# WEBrick::HTTPServer#start
+ruby -run -e httpd . -p 3000

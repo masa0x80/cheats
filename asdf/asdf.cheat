@@ -1,0 +1,27 @@
+% asdf
+
+# Install
+asdf install <lang> latest
+
+# Fix local version
+asdf local <plugin> <version>
+
+# Fix global version
+asdf global <plugin> <version>
+
+# Add plugin
+asdf plugin add <lang>
+
+# Remove plugin
+asdf plugin remove <plugin>
+
+# Update all plugins
+asdf plugin update --all
+
+# Show latest stable version
+asdf latest <plugin>
+
+# Show versions
+asdf current
+
+$ plugin: asdf plugin list
