@@ -1,9 +1,9 @@
 % ruby
 
 # bundle install
-bundle config set path 'vendor/bundle'; bundle binstubs --path=vendor/bin; bundle install --jobs=4
+bundle config set path 'vendor/bundle'; bundle binstubs --path=vendor/bin; bundle install
 # bundle install [local]
-bundle config set path 'vendor/bundle'; bundle binstubs --path=vendor/bin; bundle install --jobs=4 --local
+bundle config set path 'vendor/bundle'; bundle binstubs --path=vendor/bin; bundle install --local
 
 # solargraph
 solargraph download-core; solargraph bundle; solargraph config
