@@ -3,9 +3,6 @@
 # Create new project
 rails new <project_name> --database=mysql --skip-bundle --skip-test --skip-turbolinks --skip-action-mailer --skip-action-mailbox --skip-action-text --skip-active-storage
 
-# Create new project
-rails new . --database=mysql --skip-bundle --skip-test --skip-turbolinks --skip-action-mailer --skip-action-mailbox --skip-action-text --skip-active-storage
-
 # Create new project (ディレクトリー内で実行)
 rails new . --database=mysql --skip-bundle --skip-test --skip-turbolinks --skip-action-mailer --skip-action-mailbox --skip-action-text --skip-active-storage
 
