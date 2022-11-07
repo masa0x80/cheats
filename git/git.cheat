@@ -13,12 +13,12 @@ git commit -v
 # Amend
 git commit -v --amend
 # Fixup
-git commit --fixup (git fzf)
+git commit --fixup $(git fzf)
 
 # Git push
-git push origin (git_current_branch)
+git push origin $(git_current_branch)
 # Git push [FORCE]
-git push --force-with-lease origin (git_current_branch)
+git push --force-with-lease origin $(git_current_branch)
 
 # Show branches
 git branch
@@ -115,3 +115,12 @@ $ BRANCH_NAME: git branch --format='%(refname:short)' --sort=-committerdate
 
 # Fix symbolic-ref
 git symbolic-ref refs/remotes/origin/HEAD refs/remotes/origin/<BRANCH_NAME>
+
+# Add worktree
+git worktree add git-worktrees/<BRANCH_NAME> -b <BRANCH_NAME>
+
+# Remove worktree
+git worktree remove
+
+# Prune worktree
+git worktree prune

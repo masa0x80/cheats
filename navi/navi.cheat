@@ -1,4 +1,4 @@
 % navi
 
 # Go to cheats-path
-cd (navi info cheats-path)
+cd "$(navi info cheats-path)"
