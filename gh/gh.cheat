@@ -1,0 +1,6 @@
+% gh
+
+# Create PR
+gh pr create --title "<title>"
+
+$ title: git log --oneline --pretty=%s | fzf +m -1 --query "$(git issue-id)"
