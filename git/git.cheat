@@ -16,9 +16,9 @@ git commit -v --amend
 git commit --fixup $(git fzf)
 
 # Git push
-git push origin $(git_current_branch)
+git push origin $(git current-branch)
 # Git push [FORCE]
-git push --force-with-lease origin $(git_current_branch)
+git push --force-with-lease origin $(git current-branch)
 
 # Show branches
 git branch
@@ -68,7 +68,7 @@ git status -sb
 git switch -c <NEW_BRANCH_NAME>
 
 # review
-git review GH
+git review
 
 # git stash
 git stash
