@@ -13,7 +13,7 @@ docker images -qf dangling=true | xargs docker rmi
 docker volume ls -qf dangling=true | xargs docker volume rm
 
 # swagger-editor
-docker run -p 80:8080 -v (pwd):/tmp -e SWAGGER_FILE=/tmp/<oas_file_path> swaggerapi/swagger-editor
+docker run -p 80:8080 -v $(pwd):/tmp -e SWAGGER_FILE=/tmp/<oas_file_path> swaggerapi/swagger-editor
 
 # swagger-ui
-docker run -p 80:8080 -v (pwd):/tmp -e SWAGGER_JSON=/tmp/<oas_file_path> swaggerapi/swagger-ui
+docker run -p 80:8080 -v $(pwd):/tmp -e SWAGGER_JSON=/tmp/<oas_file_path> swaggerapi/swagger-ui

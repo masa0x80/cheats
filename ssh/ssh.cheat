@@ -1,7 +1,4 @@
 % ssh
 
-# aws-ssh
-aws-ssh
-
 # xpanes
 xpanes --ssh <host_names>

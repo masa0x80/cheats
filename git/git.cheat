@@ -57,7 +57,7 @@ git rebase --continue
 # rebase [skip]
 git rebase --skip
 # rebase [interactive]
-git rebase -i (git fzf)
+git rebase -i $(git fzf)
 
 # Show
 git show
