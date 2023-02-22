@@ -1,0 +1,4 @@
+% grep
+
+# Perl正規表現を使って先読み・後読みして一致部分を抽出
+grep -oP '(?<=<BEFORE>).+(?=<AFTER>)' <FILE>
