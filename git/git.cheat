@@ -116,6 +116,11 @@ $ BRANCH_NAME: git branch --format='%(refname:short)' --sort=-committerdate
 # Fix symbolic-ref
 git symbolic-ref refs/remotes/origin/HEAD refs/remotes/origin/<BRANCH_NAME>
 
+$ CURRENT_BRANCH_NAME: git branch --show-current
+
+# Set upstream branch
+git branch -u origin/<CURRENT_BRANCH_NAME> <CURRENT_BRANCH_NAME>
+
 # Add worktree
 git worktree add git-worktrees/<BRANCH_NAME> -b <BRANCH_NAME>
 
