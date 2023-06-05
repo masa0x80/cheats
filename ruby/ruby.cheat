@@ -7,6 +7,3 @@ bundle config set --local path vendor/bundle; bundle config set --local bin vend
 
 # solargraph
 solargraph download-core; solargraph bundle; solargraph config
-
-# WEBrick::HTTPServer#start
-ruby -run -e httpd . -p 3000

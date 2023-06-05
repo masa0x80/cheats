@@ -1,0 +1,4 @@
+% python
+
+# Simple Server
+python -m http.server 3000 --directory .
