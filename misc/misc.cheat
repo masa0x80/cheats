@@ -1,0 +1,4 @@
+% misc
+
+# 今週の木曜日
+date --date "$(date --date 'last sunday' +%Y-%m-%d) 4 days" +%Y-%m-%d
