@@ -1,10 +1,7 @@
 % http, httpie
 
 # bearer token
-http <method> '<url>' 'Authorization: Bearer $API_TOKEN'
+http <method> '<url>' "Authorization: Bearer <token>"
 
-# bearer token
-http <method> '<url>' 'Authorization: Bearer <api_token>'
-
-$ api_token: echo '$API_TOKEN'
+$ token: echo '$API_TOKEN'
 $ method: echo -e 'GET\nPOST\nPUT\nDELETE\nPATCH'

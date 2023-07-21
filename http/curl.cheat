@@ -1,10 +1,7 @@
 % curl
 
 # bearer token
-curl -X <method> -H 'Authorization: Bearer $API_TOKEN' '<url>'
-
-# bearer token
-curl -X <method> -H 'Authorization: Bearer <token>' '<url>'
+curl -X <method> -H "Authorization: Bearer <token>" '<url>'
 
 $ token: echo -e "\$API_TOKEN\n"
 $ method: echo -e 'GET\nPOST\nPUT\nDELETE\nPATCH'
