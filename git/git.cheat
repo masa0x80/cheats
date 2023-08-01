@@ -31,7 +31,7 @@ git branch --remote
 git switch <BRANCH_NAME>
 
 # Cherry pick
-git cherry-pick <COMMIT_HASH>
+git cherry-pick $(git fzf)
 
 # Show diff [chached]
 git diff --cached
@@ -121,8 +121,10 @@ $ CURRENT_BRANCH_NAME: git branch --show-current
 # Set upstream branch
 git branch -u origin/<CURRENT_BRANCH_NAME> <CURRENT_BRANCH_NAME>
 
+$ ALL_BRANCH_NAME: git branch --format='%(refname:short)' --sort=-committerdate -a | sed -e 's|origin/||'
+
 # Add worktree
-git worktree add git-worktrees/<BRANCH_NAME> -b <BRANCH_NAME>
+git worktree add git-worktrees/<ALL_BRANCH_NAME> -b <ALL_BRANCH_NAME>
 
 # Remove worktree
 git worktree remove
