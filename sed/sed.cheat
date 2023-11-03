@@ -1,4 +1,4 @@
 % sed
 
 # 一致部分を抽出
-sed -n 's|<BEFORE>\(.*\)<AFTER>|\1|p' <FILE>
+sed 's|<BEFORE>\(.*\)<AFTER>|\1|' <FILE>
