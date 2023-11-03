@@ -1,0 +1,46 @@
+% zsh
+
+# 前方一致除去（最短一致） ^pattern
+${V#<pattern>}
+
+# 前方一致除去（最長一致） ^(pattern)+
+${V##<pattern>}
+
+# 後方一致除去（最短一致） pattern$
+${V%<pattern>}
+
+# 後方一致除去（最長一致） (pattern)+$
+${V%%<pattern>}
+
+# 完全一致削除 ^pattern$
+${V:#<pattern>}
+
+# 前方一致抽出（最短一致） ^pattern
+${(M)LIST#<pattern>}
+
+# 前方一致抽出（最長一致） ^(pattern)+
+${(M)LIST##<pattern>}
+
+# 後方一致抽出（最短一致） pattern$
+${(M)LIST%<pattern>}
+
+# 後方一致抽出（最長一致） (pattern)+$
+${(M)LIST%%<pattern>}
+
+# 完全一致抽出 ^pattern$
+${(M)LIST:#<pattern>}
+
+# 文字列置換（最長一致） sub
+${V/<pattern>/<replacement>}
+
+# 文字列置換（最長一致） gsub
+${V//<pattern>/<replacement>}
+
+# 文字列置換（最短一致） sub
+${(S)V/<pattern>/<replacement>}
+
+# 文字列置換（最短一致） gsub
+${(S)V//<pattern>/<replacement>}
+
+# 文字列置換（完全一致）
+${V:/<pattern>/<replacement>}
