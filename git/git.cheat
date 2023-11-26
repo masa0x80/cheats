@@ -1,7 +1,7 @@
 % git
 
 # Initial commit
-git commit --allow-empty -m 'Initial commit'
+git commit --allow-empty -m '🌱 Initial commit'
 
 # Add file
 git add
@@ -33,7 +33,7 @@ git switch <BRANCH_NAME>
 # Cherry pick
 git cherry-pick $(git fzf)
 
-# Show diff [chached]
+# Show diff [cached]
 git diff --cached
 # Show diff [staged]
 git diff --staged
