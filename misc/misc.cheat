@@ -5,3 +5,6 @@ date --date "$(date --date 'last sunday' +%Y-%m-%d) 4 days" +%Y-%m-%d
 
 # textlint init
 echo '{ "rules": {} }' > .textlintrc.json
+
+# Reset nvim
+rm -rf ~/.local/share/nvim ~/.cache/nvim
