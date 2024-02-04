@@ -2,3 +2,15 @@
 
 # Simple Server
 python -m http.server 3000 --directory .
+
+# venv (init)
+python -m venv venv; echo "venv" > .gitignore; echo "source_env_if_exists venv/bin/activate" > .envrc; direnv allow
+
+# venv (restore)
+python -m venv venv; pip install -r requirements.txt
+
+# Dump installed packages
+pip freeze > requirements.txt
+
+# Restore requirements.txt
+pip install -r requirements.txt
