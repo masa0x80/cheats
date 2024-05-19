@@ -9,8 +9,5 @@ echo '{ "rules": {} }' > .textlintrc.json
 # Reset nvim
 rm -rf ~/.local/{share,state}/nvim ~/.cache/nvim
 
-# Disabled formatter
-export DISABLED_FORMATTER=1; nvim
-
 # Display Mac spec
 system_profiler SPHardwareDataType
