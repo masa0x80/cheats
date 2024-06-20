@@ -1,0 +1,7 @@
+% totp-cli
+
+# add token
+totp-cli add-token v <name>
+
+# copy token
+totp-cli g v <name> | tee >(pbcopy)
