@@ -1,7 +1,10 @@
 % totp-cli
 
 # add token
-totp-cli add-token v <name>
+totp-cli add-token ${TOTP_NAMESPACE:-ns} <name>
 
 # copy token
-totp-cli g v <name> | tee >(pbcopy)
+totp-cli generate ${TOTP_NAMESPACE:-ns} <name> | tee >(pbcopy)
+
+# list
+totp-cli list ${TOTP_NAMESPACE:-ns}
