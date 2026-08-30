@@ -1,0 +1,4 @@
+% jj
+
+# jj log
+jj log -r '::@' -n <num>
